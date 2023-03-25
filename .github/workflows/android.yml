@@ -18,7 +18,6 @@ on:
 
 jobs:
   build:
-    if: "contains(toJSON(github.event.commits.*.message), '[ci]')"
     name: Build
     runs-on: ubuntu-latest
 
